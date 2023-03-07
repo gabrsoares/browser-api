@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser API</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./img/Logo.png" alt="Logo">
+            </div>
+            <div class="nav">
+                    <a class="link active" href="#">Início</a>
+                    <a class="link" href="#">Localização</a>
+                    <a class="link" href="#">Serviços</a>
+                    <a class="link" href="#">Segmentos</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <img class="img-banner" src="./img/banner.png" alt="Banner logo">
+            <div class="banner-text">
+                <h2>Transformação Digital</h2>
+                <p>Lorem Ipsum is simply dummy
+                    text of the printing and typesetting
+                    industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever
+                    since the 1500s.</p>
+                <button onclick="getNotification()" class="button" href="">Ativar Notificações</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="address">
+        <img id="elipse" src="./img/elipse.svg" alt="">
+        <div class="container">
+            <h2>Localização</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+            <div id="address-box">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="975" height="500" id="gmap_canvas" src="" name="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:975px;}</style><a href="https://www.embedgooglemap.net">google map embed generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:975px;}</style></div></div>
+            </div>
+            <img id="vetor" src="./img/vetor.svg" alt="">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Serviços</h2>
+            <img src="./img/elipse-2.svg" alt="" class="services-elipse">
+            <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's standard</p>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3 class="service-item_title">UX Design</h3>
+                    <img src="./img/01.svg" alt="" class="service-item_img">
+                    <p>
+                        o	Web Development 
+                        o	SaaS Platform Development
+                        o	Full Stack Development
+                    </p>
+                    <br>
+                    <p>
+                        We create innovative solutions to solve customer problems and giving you more control over product.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h3 class="service-item_title">Front-End</h3>
+                    <img src="./img/02.svg" alt="" class="service-item_img">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <br>
+                    <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+                </div>
+                <div class="service-item">
+                    <h3 class="service-item_title">Test</h3>
+                    <img src="./img/03.svg" alt="" class="service-item_img">
+                    <p>
+                        Designing success through creative web design for your business to be the best.
+                    </p>
+                    <br>
+                    <p>
+                        Improving customer engagement with enhanced user experience.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <h3 class="service-item_title">Delivery</h3>
+                    <img src="./img/04.svg" alt="" class="service-item_img">
+                    <p>
+                        Develop your MVP with our experts who help create a solution that solves customer problems.
+                    </p>
+                    <br>
+                    <p>
+                        We fill in the technology gaps for you.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="segment">
+        <div class="container">
+            <h2>Segmentos</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's 
+            </p>
+            <div class="segment-list">
+                <div class="segment-list_item">
+                    <h3>E-commerce</h3>
+                    <div class="segment-list_img">
+                        <img src="./img/commerce.svg" alt="">
+                    </div>
+                    <p
+                        >We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.
+                    </p>
+                </div>
+                <div class="segment-list_item">
+                    <h3>FinTechs</h3>
+                    <div class="segment-list_img">
+                        <img src="./img/fintech.svg" alt="">
+                    </div>
+                    <p>
+                        We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.   
+                    </p>
+                </div>
+                <div class="segment-list_item">
+                    <h3>Mobilidade</h3>
+                    <div class="segment-list_img">
+                        <img src="./img/mobilidade.svg" alt="">
+                    </div>
+                    <p>
+                        We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.
+                    </p>
+                </div>
+                <div class="segment-list_item">
+                    <h3>Entreternimento</h3>
+                    <div class="segment-list_img">
+                        <img src="./img/entreternimento.svg" alt="">
+                    </div>
+                    <p>
+                        We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.
+                    </p>
+                </div>
+                <div class="segment-list_item">
+                    <h3>Direito</h3>
+                    <div class="segment-list_img">
+                        <img src="./img/direito.svg" alt="">
+                    </div>
+                    <p>
+                        We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.
+                    </p>
+                </div>
+                <div class="segment-list_item">
+                    <h3>Hospitalidade</h3>
+                    <div class="segment-list_img">
+                        <img src="./img/hospitalidade.svg" alt="">
+                    </div>
+                    <p>
+                        We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
+                        With e-commerce solutions, ERPS and improvised customer services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <img src="./img/logo-white.png" alt="">
+            <span>&COPY; Copyright 2022 | All Rights Reserved</span>
+        </div>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>

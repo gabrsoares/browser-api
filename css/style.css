@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+}
+
+header .container {
+    align-items: center;
+    justify-content: space-between;
+
+    height: 150px;
+    margin: 0 7rem;
+    width: 80%;
+}
+
+.logo {
+    margin-left: 3rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    width: 700px;
+    margin-right: 1rem;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+    font-size: 16px;
+}
+
+.link:hover {
+    border-bottom: 1px solid #555;
+}
+
+.active {
+    font-weight: 600;
+}
+
+.banner {
+    margin-bottom: 8rem;
+}
+
+.banner .container {
+    align-items: center;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-banner {
+    width: 900px;
+}
+
+.container h2 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #1A1A1A;
+    width: 504px;
+    margin-bottom: 2rem;
+}
+
+.container p {
+    font-weight: 400;
+    font-size: 36px;
+    width: 664px;
+    margin-bottom: 2rem;
+    color: #595959;
+}
+
+.button {
+    border: 1px solid #000;
+    font-size: 24px;
+    width: 304px;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #0074FF;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.address {
+    margin-top: 5rem;
+    position: relative;
+}
+
+.address .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.address .container h2 {
+    font-size: 48px;
+}
+
+.address .container p {
+    width: 1200px;
+    margin-bottom: 3rem;
+}
+
+#address-box {
+    width: 975px;
+    height: 500px;
+    background-color: #E2E0E0;
+    margin-top: 3rem;
+    position: relative;
+    box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+#elipse {
+    position: absolute;
+    top: -45px;
+}
+
+#vetor {
+    margin: 3rem 0 5rem 0;
+}
+
+.services .container {
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 6rem;
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.services-elipse {
+    position: absolute;
+    left: 1400px;
+    top: -60px;
+}
+
+.services .container h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.services .container p {
+    text-align: center;
+    width: 1200px;
+    margin-bottom: 4rem;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.service-item {
+    width: 309px;
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0074FF;
+    color: #fff;
+    position: relative;
+}
+
+.service-item_title {
+    font-size: 36px;
+    margin: 6rem 0 5rem 2.5rem;
+}
+
+.container .service-item p {
+    font-size: 18px !important;
+    width: 280px !important;
+    color: #fff;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.service-item_img {
+    width: 154px;
+    height: 176px;
+    position: absolute;
+    left: 20px;
+}
+
+.segment .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.segment .container h2{
+    font-size: 48px;
+    margin-top: 6rem;
+}
+
+.segment .container p {
+    width: 1060px;
+    text-align: center;
+}
+
+.segment-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 200px;
+    margin-bottom: 5rem;
+}
+
+.segment-list_item {
+    width: 400px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.segment-list_item h3 {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: initial;
+    width: 320px;
+}
+
+.container .segment-list_item p {
+    font-size: 18px;
+    width: 320px;
+    text-align: initial;
+}
+
+.segment-list_img {
+    position: absolute;
+    left: 10px;
+    top: -9px;
+    width: 57px;
+    height: 109px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+}
+
+.segment-list_img img {
+    width: 40px;
+}
+
+footer {
+    width: 100%;
+    background-color: #1A1A1A;
+    height: 150px;
+    padding: 0 10rem;
+    margin-top: 7rem;
+}
+
+.footer {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.footer span {
+    font-size: 14px;
+}
+
+
