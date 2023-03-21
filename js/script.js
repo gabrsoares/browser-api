@@ -25,3 +25,25 @@ function getNotification() {
         })
     }
 }
+
+function dragStart(e) {
+    console.log(e.dataTransfer);
+
+    e.dataTransfer.setData('text/plain', e.target.id);
+
+    e.currentTarget.style.backgroundColor = 'gray'
+}
+
+function dragOver(e) {
+    e.preventDefault();
+}
+
+function drop(e) {
+    const id = e.dataTransfer.getData('text');
+    const draggableElement = document.getElementById(id);
+    const dropzone = e.target;
+
+    dropzone.appendChild(draggableElement);
+
+    e.dataTransfer.clearData();
+}

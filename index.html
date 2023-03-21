@@ -23,10 +23,10 @@
                 <img src="./img/Logo.png" alt="Logo">
             </div>
             <div class="nav">
-                    <a class="link active" href="#">Início</a>
-                    <a class="link" href="#">Localização</a>
-                    <a class="link" href="#">Serviços</a>
-                    <a class="link" href="#">Segmentos</a>
+                    <a class="link active" href="#top">Início</a>
+                    <a class="link" href="#address">Localização</a>
+                    <a class="link" href="#services">Serviços</a>
+                    <a class="link" href="#segment">Segmentos</a>
             </div>
         </div>
     </header>
@@ -46,7 +46,7 @@
         </div>
     </section>
 
-    <section class="address">
+    <section id="address" class="address">
         <img id="elipse" src="./img/elipse.svg" alt="">
         <div class="container">
             <h2>Localização</h2>
@@ -59,14 +59,14 @@
         </div>
     </section>
 
-    <section class="services">
-        <div class="container">
+    <section id="services" class="services parent">
+        <div class="container origin dropzone" ondragover="dragOver(event)" ondrop="drop(event)">
             <h2>Serviços</h2>
             <img src="./img/elipse-2.svg" alt="" class="services-elipse">
             <p>Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry. Lorem Ipsum has been the industry's standard</p>
             <div class="services-list">
-                <div class="service-item">
+                <div class="service-item" id="drag-1" class="draggable" draggable="true" ondragstart="dragStart(event)">
                     <h3 class="service-item_title">UX Design</h3>
                     <img src="./img/01.svg" alt="" class="service-item_img">
                     <p>
@@ -79,7 +79,7 @@
                         We create innovative solutions to solve customer problems and giving you more control over product.
                     </p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" id="drag-2" class="draggable" draggable="true" ondragstart="dragStart(event)">
                     <h3 class="service-item_title">Front-End</h3>
                     <img src="./img/02.svg" alt="" class="service-item_img">
                     <p>
@@ -90,7 +90,7 @@
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                 </p>
                 </div>
-                <div class="service-item">
+                <div class="service-item dropzone" ondragover="dragOver(event)" ondrop="drop(event)">
                     <h3 class="service-item_title">Test</h3>
                     <img src="./img/03.svg" alt="" class="service-item_img">
                     <p>
@@ -101,7 +101,7 @@
                         Improving customer engagement with enhanced user experience.
                     </p>
                 </div>
-                <div class="service-item">
+                <div class="service-item dropzone" ondragover="dragOver(event)" ondrop="drop(event)">
                     <h3 class="service-item_title">Delivery</h3>
                     <img src="./img/04.svg" alt="" class="service-item_img">
                     <p>
@@ -117,7 +117,7 @@
         </div>
     </section>
 
-    <section class="segment">
+    <section id="segment" class="segment">
         <div class="container">
             <h2>Segmentos</h2>
             <p>
