@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100% !important;
+
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
+
 }
 
 .container {
@@ -30,8 +33,7 @@ header .container {
     display: flex;
     justify-content: space-between;
 
-    width: 700px;
-    margin-right: 1rem;
+    width: 46%;
 }
 
 .link {
@@ -64,21 +66,21 @@ header .container {
 }
 
 .img-banner {
-    width: 900px;
+    width: 50vw;
 }
 
 .container h2 {
     font-size: 64px;
     font-weight: 700;
     color: #1A1A1A;
-    width: 504px;
+    width: 80%;
     margin-bottom: 2rem;
 }
 
 .container p {
     font-weight: 400;
     font-size: 36px;
-    width: 664px;
+    width: 67%;
     margin-bottom: 2rem;
     color: #595959;
 }
@@ -86,7 +88,7 @@ header .container {
 .button {
     border: 1px solid #000;
     font-size: 24px;
-    width: 304px;
+    width: 307px;
     text-align: center;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -117,7 +119,7 @@ header .container {
 }
 
 .address .container p {
-    width: 1200px;
+    width: 63vw;
     margin-bottom: 3rem;
 }
 
@@ -129,6 +131,16 @@ header .container {
     position: relative;
     box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.2);
     margin-bottom: 2rem;
+}
+
+.mapouter {
+    height: 500px;
+    width: 975px;
+}
+
+.gmap_canvas, #gmap_canvas{
+    width: 975px;
+    height: 500px;
 }
 
 #elipse {
@@ -162,7 +174,7 @@ header .container {
 
 .services .container p {
     text-align: center;
-    width: 1200px;
+    width: 63vw;
     margin-bottom: 4rem;
 }
 
@@ -214,7 +226,7 @@ header .container {
 }
 
 .segment .container p {
-    width: 1060px;
+    width: 56vw;
     text-align: center;
 }
 
@@ -223,6 +235,7 @@ header .container {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 200px;
     margin-bottom: 5rem;
+    width: 90vw;
 }
 
 .segment-list_item {
@@ -240,7 +253,8 @@ header .container {
     font-weight: 600;
     font-size: 24px;
     text-align: initial;
-    width: 320px;
+    width: auto;
+    align-self: center;
 }
 
 .container .segment-list_item p {
@@ -278,10 +292,230 @@ footer {
     align-items: center;
     justify-content: space-between;
     height: 150px;
+    width: 100%;
 }
 
 .footer span {
     font-size: 14px;
 }
 
+@media (max-width: 600px) {
+
+    header .container {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .logo {
+        margin: 2rem auto;
+    }
+    
+    .nav {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 3rem;
+        padding: 0 .25rem;
+    }
+
+    .button {
+        width: 235px;
+        font-size: 18px;
+    }
+
+    .img-banner {
+        display: none;
+    }
+
+    .banner-text {
+        text-align: center;
+        align-items: center;
+    }
+
+    .banner-text h2, .address .container h2, .services .container h2, .segment .container h2 {
+        font-size: 20px;
+    }
+
+    .banner-text p, .address .container p, .services .container p, .segment .container p {
+        font-size: 18px;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+
+    .services-elipse {
+        display: none;
+    }
+
+    .services .container p {
+        width: 80vw;
+    }
+
+    #elipse {
+        overflow: hidden;
+    }
+    
+    #address-box {
+        width: 300px;
+        height: auto;
+    }
+
+    .mapouter {
+        height: auto;
+        width: 300px;
+    }
+
+    .gmap_canvas, #gmap_canvas{
+        width: 300px !important;
+        height: 100%;
+    }
+
+    #vetor {
+        width: 40vw;
+    }
+
+    .segment .container p {
+        width: 80vw;
+    }
+
+    .segment-list {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .segment-list_item {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .segment-list_img {
+        display: none;
+    }
+
+    .container .segment-list_item p{
+        width: 80vw;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer span {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width:1400px) {
+
+    header .container {
+        margin: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .container h2 {
+        font-size: 30px;
+    }
+
+    .container p {
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 18px;
+        width: 230px;
+    }
+
+    #address-box {
+        width: 600px;
+        height: auto;
+    }
+
+    .mapouter {
+        height: auto;
+        width: 600px;
+    }
+
+    .gmap_canvas, #gmap_canvas{
+        width: 600px !important;
+        height: 100%;
+    }
+
+    .services-list, .segment-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-list {
+        gap: 0.5rem;
+    }
+
+    .service-item {
+        width: 290px;
+    }
+
+    .segment-list {
+        column-gap: 0;
+        width: 90vw;
+    }
+
+    .segment-list_item {
+        width: 100%;
+    }
+
+    .segment-list_img {
+        width: 50px;
+        height: 70px;
+    }
+
+    .segment-list_img img {
+        width: 30px;
+    }
+
+    footer {
+        padding: 0 3rem;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .segment-list {
+        column-gap: 50px;
+    }
+
+    .container .segment-list p {
+        width: auto;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .service-item {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1401px) {
+    .services-list {
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 1919px){
+    .services-elipse {
+        display: none;
+    }
+}
 
